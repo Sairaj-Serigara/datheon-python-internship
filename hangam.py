@@ -1,4 +1,16 @@
 import random
+words=[
+    "python",
+    "computer",
+    "database",
+    "developer",
+    "analysis"
+]
+
+word=random.choice(words)
+
+print(word)
+
 hangman_art=[
 """
  -----
@@ -67,3 +79,4 @@ hangman_art=[
 
 print("Welcome to Hangman!")
 print(hangman_art[0])
+
