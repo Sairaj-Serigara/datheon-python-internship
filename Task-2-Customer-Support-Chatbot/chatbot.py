@@ -1,3 +1,18 @@
+import re
+
+def get_response(message):
+    message=message.lower()
+    if re.search(r"hour|time|open",message):
+        return responses["hours"]
+    elif re.search(r"delivery|shipping|arrive",message):
+        return responses["delivery"]
+    elif re.search(r"return|refund|exchange",message):
+        return responses["return"]
+    elif re.search(r"price|cost|amount",message):
+        return responses["price"]
+    else:
+        return None
+
 print("Customer Support Chatbot Started")
 def chatbot():
     print("Bot: Hello! Welcome to Customer Support.")
