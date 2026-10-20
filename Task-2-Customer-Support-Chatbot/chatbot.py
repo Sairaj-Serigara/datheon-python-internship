@@ -16,3 +16,10 @@ def chatbot():
             print("Bot:I am still learning. Please ask another question.")
 
 chatbot()
+
+responses = {
+    "hours": "Our business hours are Monday to Friday, 9 AM to 6 PM.",
+    "delivery": "Delivery usually takes 3 to 5 working days.",
+    "return": "Products can be returned within 30 days.",
+    "price": "Please provide the product name to know the price."
+}
